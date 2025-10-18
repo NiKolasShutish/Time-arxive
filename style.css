@@ -1,0 +1,138 @@
+/* ОСНОВНЫЕ НАСТРОЙКИ */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0c0c0c;
+    color: #00ff00;
+    margin: 0;
+    padding: 20px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50%" y="50%" font-family="monospace" font-size="10" fill="%2300ff00" opacity="0.1">0101</text></svg>');
+}
+
+.terminal {
+    background: #000000;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    background: #001100;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 3px solid #00ff00;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.menu-item:hover {
+    background: #003300;
+    transform: translateX(10px);
+}
+
+.content-section {
+    display: none;
+    background: #001100;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid #00ff00;
+}
+
+.theory-box {
+    background: #002200;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #00ff00;
+}
+
+.memory-fragment {
+    background: #002200;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 3px solid #00ff00;
+}
+
+.dialogue {
+    background: #003300;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #00ff00;
+    font-style: italic;
+}
+
+.reflection {
+    background: #001a00;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ffff00;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.evidence-item {
+    border: 1px solid #00ff00;
+    padding: 10px;
+    text-align: center;
+}
+
+.login-panel {
+    text-align: center;
+    padding: 30px;
+}
+
+input, button, textarea {
+    background: #000000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    margin: 5px;
+    font-family: monospace;
+    width: 90%;
+}
+
+button {
+    cursor: pointer;
+    transition: background 0.3s;
+    width: auto;
+}
+
+button:hover {
+    background: #003300;
+}
+
+.timestamp {
+    color: #888888;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.hint {
+    color: #ffff00;
+    background: #003300;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffff00;
+    margin: 15px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}time
+
