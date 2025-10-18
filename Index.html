@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>АРХИВ ИССЛЕДОВАНИЙ СОЗДАНИИ МАШИНЫ ВРЕМЕНИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginSection" class="terminal">
+    <div class="login-panel">
+        <h1>ДОСТУП К АРХИВУ ИССЛЕДОВАНИЙ МАШИНЫ ВРЕМЕНИ</h1>
+        <p class="timestamp">[СИСТЕМНОЕ ВРЕМЯ: <span id="currentTime"></span>]</p>
+        
+        <p class="hint">Подсказка: Конкретный год для отправления семьи + твой замысел год путешествия во времени где будешь жить со своей семьей</p>
+        
+        <form action="login.php" method="POST">
+            <input type="password" id="archivePassword" name="password" placeholder="ВВЕДИТЕ КОД ДОСТУПА">
+            <button type="submit">ПОДКЛЮЧИТЬСЯ К СИСТЕМЕ</button>
+        </form>
+    </div>
+</div>
+
+<div id="mainArchive" class="terminal" style="display: none;">
+    <div class="header">
+        <h1>АРХИВ ИССЛЕДОВАНИЙ ПУТЕШЕСТВИЙ ВО ВРЕМЕНИ</h1>
+        <p class="timestamp">[ПОСЛЕДНЕЕ ОБНОВЛЕНИЕ: 2025-01-15 14:30:25]</p>
+    </div>
+
+    <!-- РАЗДЕЛ 1: ЛИЧНЫЙ ОПЫТ -->
+    <div class="menu-item" onclick="toggleSection('personal')">
+        <h2>1. ЛИЧНЫЙ ОПЫТ И НАБЛЮДЕНИЯ</h2>
+        <p>Хронология событий, первые переходы, документальные свидетельства</p>
+    </div>
+    <div id="personal" class="content-section">
+        <h3>ДОКУМЕНТИРОВАННЫЕ СЛУЧАИ</h3>
+        
+        <div class="evidence-grid">
+            <div class="evidence-item">
+                <h4>ПЕРВЫЙ КОНТАКТ</h4>
+                <p class="timestamp">2024-03-15 08:30</p>
+                <p>Начало временных аномалий</p>
+            </div>
+            <div class="evidence-item">
+                <h4>МУЗЕЙ БРАЛОРН</h4>
+                <p class="timestamp">2024-05-22 14:45</p>
+                <p>Фотодокументация артефактов</p>
+            </div>
+        </div>
+
+        <h3>МОЙ ЛИЧНЫЙ ДНЕВНИК</h3>
+        <div class="theory-box">
+            <h4>ПАМЯТЬ РОЖДЕНИЯ: ВЫБОР СОЗНАНИЯ</h4>
+            <p class="timestamp">[ЗАПИСЬ ИЗ ГЛУБИН ПАМЯТИ]</p>
+            
+            <!-- ТУТ БУДЕШЬ ПИСАТЬ СВОЙ ТЕКСТ -->
+            <div id="diaryContent">
+                <p>Твои записи появятся здесь...</p>
+            </div>
+            
+            <!-- ФОРМА ДЛЯ НОВЫХ ЗАПИСЕЙ -->
+            <div class="memory-fragment">
+                <h5>НОВАЯ ЗАПИСЬ:</h5>
+                <textarea id="newEntry" rows="4" placeholder="Напиши свои мысли..."></textarea>
+                <button onclick="addDiaryEntry()">СОХРАНИТЬ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- РАЗДЕЛ 2: СОЗДАНИЕ МАШИНЫ ВРЕМЕНИ -->
+    <div class="menu-item" onclick="toggleSection('timeMachine')">
+        <h2>2. СОЗДАНИЕ МАШИНЫ ВРЕМЕНИ</h2>
+        <p>Теория, практика, необходимые компоненты и методы</p>
+    </div>
+    <div id="timeMachine" class="content-section">
+        <h3>ТЕОРЕТИЧЕСКИЕ ОСНОВЫ</h3>
+        <div class="theory-box">
+            <h4>ЧТО НУЖНО ДЛЯ СОЗДАНИЯ МАШИНЫ ВРЕМЕНИ:</h4>
+            <ul>
+                <li><strong>Энергетический источник</strong> - для создания временного поля</li>
+                <li><strong>Стабилизатор пространства-времени</strong> - для защиты от парадоксов</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; border-top: 1px solid #00ff00; padding-top: 15px;">
+        <button onclick="logout()">ЗАКРЫТЬ АРХИВ</button>
+        <p class="timestamp">[СТАТУС: АКТИВНО] [ВЕРСИЯ: 4.0] [ЗАЩИЩЕНО: golovko2749]</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
